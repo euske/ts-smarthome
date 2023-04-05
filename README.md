@@ -1,4 +1,4 @@
-# ts-tdd
+# ts-smarthome
 
 これは typescript + jest を使って TDD (テスト駆動開発) を行うための
 テンプレートである。
@@ -7,8 +7,8 @@
 
 あらかじめ Node.js をインストールしておく。
 
-    $ git clone https://github.com/euske/ts-tdd
-    $ cd ts-tdd
+    $ git clone https://github.com/euske/ts-smarthome
+    $ cd ts-smarthome
     $ npm install
 
 ## テスト実行
