@@ -1,4 +1,22 @@
-import { SmartHome } from "./SmartHome"
+import { Bulb, Switch, SmartHome } from "./SmartHome"
+
+// AlwaysOnSwitch: つねにオンを返すスイッチ。
+class AlwaysOnSwitch implements Switch {
+    isOn(): boolean {
+        return true
+    }
+}
+
+// SpyBulb: ついたかどうかを記録するだけの電球。
+class SpyBulb implements Bulb {
+    turnOn() {
+
+    }
+
+    turnOff() {
+
+    }
+}
 
 describe('SmartHome', () => {
 
