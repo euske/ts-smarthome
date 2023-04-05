@@ -8,6 +8,11 @@ export interface Switch {
 }
 
 export class SmartHome {
-    run(bulb: Bulb, swt: Switch) {
+    constructor(bulb: Bulb, swt: Switch) {
+        // TODO
+    }
+
+    run() {
+        // TODO
     }
 }

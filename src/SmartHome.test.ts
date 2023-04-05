@@ -9,27 +9,34 @@ class AlwaysOnSwitch implements Switch {
 
 // SpyBulb: ついたかどうかを記録するだけの電球。
 class SpyBulb implements Bulb {
-    turnOn() {
+    turnOn_wasCalled = false
+    turnOff_wasCalled = false
 
+    turnOn() {
+        // TODO
     }
 
     turnOff() {
-
+        // TODO
     }
 }
 
 describe('SmartHome', () => {
 
-    test('switchがオンであればbulbをオンにする', () => {
+    test('スイッチがonのとき、電球をonにする', () => {
         // 準備
         const bulb = new SpyBulb()
         const swt = new AlwaysOnSwitch()
 
         // 実行
-        new SmartHome().run(bulb, swt)
+        new SmartHome(bulb, swt).run()
 
         // 結果の確認
         expect(bulb.turnOn_wasCalled).toBe(true)
         expect(bulb.turnOff_wasCalled).toBe(false)
+    })
+
+    test('スイッチがoffのとき、電球をoffにする', () => {
+        // TODO
     })
 })
